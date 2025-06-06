@@ -172,13 +172,33 @@ if st.button("🎯 Me dá uma sugestão!"):
 
     st.caption("Use essas cores como base na sua roupa ou nos acessórios!") 
     # Upload de imagem do look do usuário
+# Imagens de inspiração para cada ocasião
 
-st.markdown("### 📸 Quer mostrar seu look?")
+imagens_look = {
 
-foto = st.file_uploader("Envie uma foto da sua roupa ou inspiração (formato .jpg ou .png)", type=["jpg", "jpeg", "png"])
+    "Faculdade": "https://i.pinimg.com/564x/86/5b/8c/865b8c60a5e3cf316ac33a22c3012f9d.jpg",
 
-if foto is not None:
+    "Escola": "https://i.pinimg.com/564x/42/8f/5c/428f5c6f3ce88e5820d86ac3dce4c30e.jpg",
 
-    st.image(foto, caption="Seu look enviado!", use_column_width=True)
+    "Shopping": "https://i.pinimg.com/564x/f1/33/61/f133611d54c5f661e4c6d0f4e2d57b3c.jpg",
 
-    st.success("Arrasou! Agora é só combinar com as sugestões que te dei 😍") 
+    "Date": "https://i.pinimg.com/564x/0b/47/74/0b47749634f2ab59cfd2067005b8f13e.jpg",
+
+    "Praia": "https://i.pinimg.com/564x/2b/44/e2/2b44e21d1948f6871eae2b148c561a62.jpg",
+
+    "Festa / Balada": "https://i.pinimg.com/564x/bc/2e/82/bc2e82c8d63741be7ebc9aab39d2a04b.jpg",
+
+    "Piquenique": "https://i.pinimg.com/564x/31/dc/43/31dc438f355bace25b2d4f4f95ed9a95.jpg",
+
+    "Museu": "https://i.pinimg.com/564x/18/7d/3f/187d3fdcc3f338ce3b30cc11e173ea23.jpg",
+
+    "Brunch": "https://i.pinimg.com/564x/52/15/e2/5215e2eb24a6f9ed235d1d7deccc84cb.jpg",
+
+    "Churrasco": "https://i.pinimg.com/564x/9e/23/c6/9e23c60753a3a4a6cde84937cfbd716c.jpg",
+
+    "Cinema": "https://i.pinimg.com/564x/24/93/45/249345b3cc2c3ff0f6e79b986fd12ac9.jpg",
+
+    "Teatro": "https://i.pinimg.com/564x/32/d0/7a/32d07ad38910a978d6c81a9c9aa04123.jpg"
+
+} 
+
