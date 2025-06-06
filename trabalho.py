@@ -171,3 +171,14 @@ if st.button("🎯 Me dá uma sugestão!"):
     st.image(paletas[tempo], use_column_width=True)
 
     st.caption("Use essas cores como base na sua roupa ou nos acessórios!") 
+    # Upload de imagem do look do usuário
+
+st.markdown("### 📸 Quer mostrar seu look?")
+
+foto = st.file_uploader("Envie uma foto da sua roupa ou inspiração (formato .jpg ou .png)", type=["jpg", "jpeg", "png"])
+
+if foto is not None:
+
+    st.image(foto, caption="Seu look enviado!", use_column_width=True)
+
+    st.success("Arrasou! Agora é só combinar com as sugestões que te dei 😍") 
